@@ -19,15 +19,15 @@
           <a class="nav-link" href="#menu">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#photo">Photos</a>
         </li>
     </ul>
 </header>
 
 <section id="home" class="content">
-    <h1>Restaurant bio et bobo</h1> 
-    <img src="./img/resto.jpg" alt="image_resto">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h1>Restaurant bio & bobo</h1> 
+    <img class="img-home" src="./img/resto.jpg" alt="image_resto">
+    <p>Produits frais et bio</p>
 </section>
 
 <section id="menu" class="content hidden">
@@ -44,12 +44,26 @@
 </section>
 
 <section id="photo" class="content hidden">
-    <h3>Photos</h3>
-    
+    <h3>Photos Drag and Drop &#128295</h3>
+    <div id="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="row">
+        <div class="col-sm-3" id="photo1" ondragstart="drag(event)" draggable="true">
+            <img src="./img/photo1.jpg" alt="photo1" class="img-menu" >
+        </div>
+        <div class="col-sm-3" id="photo2" ondragstart="drag(event)" draggable="true">
+            <img src="./img/photo2.png" alt="photo2" class="img-menu" >
+        </div>
+        <div class="col-sm-3" id="photo3" ondragstart="drag(event)" draggable="true">
+            <img src="./img/photo3.jpg" alt="photo3" class="img-menu">
+        </div>
+        <div class="col-sm-3" id="photo4" ondragstart="drag(event)" draggable="true">
+            <img src="./img/photo4.jpg" alt="photo4" class="img-menu" >
+        </div>
+    </div>
+</div>
 </section>
+
 </body>
-
-
 <script src="./foodtech.js"></script>
 </body>
 </html>

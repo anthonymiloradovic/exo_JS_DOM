@@ -2,7 +2,10 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     align-items: center;
-
+}
+h1, h3{
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 ul{
     list-style: none;
@@ -10,4 +13,20 @@ ul{
 
 .hidden{
     display: none;
+}
+
+.img-home{
+    border-radius: 8px;
+    border: 2px solid rgb(21, 21, 21);
+}
+
+.img-menu{
+    height: 130px;
+    width: 130px;
+    border-radius: 8px;
+    border: 2px solid rgb(21, 21, 21);
+}
+
+.row{
+    padding-top: 20px;
 }
